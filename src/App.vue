@@ -42,6 +42,15 @@ import { ref, watch } from 'vue'
  * 
  * - Computed properties allow you to define a property that is calculated based on other data properties in your componenet
  * - When any of the dependencies change, Vue automatically recalculates the computed property and updates the DOM accordingly.
+ * 
+ * Watchers
+ * - Performing asynchronous or expensive operations in response to data changes
+ * 
+ * Computed properties
+ * - Performing pure computation and be free of side effects
+ *    + Don't make async requests
+ *    + Don't mutate other state
+ *    + Don't mutate the DOM
  */
 
 let message = ref('Hello, Watchers!')
