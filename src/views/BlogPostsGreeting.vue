@@ -5,6 +5,7 @@
             Here you can find all the blog posts that have been published by our
             authors. Click on any of them to read more.
         </h2>
+        <button @click="goToRandomBlogPost">Show Random Blog Post</button>
     </div>
 </template>
 
