@@ -34,6 +34,10 @@ import { createRouter, createWebHistory } from 'vue-router'
            path: '/blogPosts',
            name: 'blogPosts',
            component: BlogPosts,
+           meta: {
+            enterAnimation: 'animate__animated animate__bounceIn',
+            leaveAnimation: 'animate__animated animate__bounceOut',
+            },
            redirect: { name: 'blogPostsGreeting' },
            children: [
              {
